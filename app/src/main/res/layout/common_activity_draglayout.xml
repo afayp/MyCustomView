@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/toolbar" />
+
+    <com.pfh.mycustomview.view.VDHLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/view1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="拖我试试！(拖不动)"
+            android:background="@android:color/holo_purple"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/view2"
+
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="拖我试试！(自由可拖动)"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/view3"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="拖我试试！(仅viewgroup滑动)"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/view4"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="拖我试试！(仅左右拖动)"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/view5"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="拖我试试！(自动返回)"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/view6"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="拖我试试！(拖住左边界滑动)"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/view7"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="拖我试试！(clickable为true)"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:clickable="true"/>
+
+    </com.pfh.mycustomview.view.VDHLayout>
+
+
+</LinearLayout>

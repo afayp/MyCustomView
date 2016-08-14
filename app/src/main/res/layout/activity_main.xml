@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar" />
+
+
+    <Button
+        android:id="@+id/btn_slideCutListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="scroller实现左右滑动删除item的Listview"
+        android:onClick="btn_slideCutListView"
+        />
+
+    <Button
+        android:id="@+id/btn_draglayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="DragLayout实现的可拖动viewGroup"
+        android:onClick="btn_draglayout"
+        />
+
+    <Button
+        android:id="@+id/btn_pieView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="图表"
+        android:onClick="btn_pieView"
+        />
+
+    <Button
+        android:id="@+id/btn_sketchpad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="surfaceview实现的画图板"
+        android:onClick="btn_sketchpad"
+        />
+
+    <Button
+        android:id="@+id/btn_analogClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="时钟(一些细节)"
+        android:onClick="btn_analogClock"
+        />
+
+    <Button
+        android:id="@+id/btn_scratchCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="PorterDuffXfermode实现的刮刮卡"
+        android:onClick="btn_scratchCardView"
+        />
+
+    <Button
+        android:id="@+id/btn_smallthings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="一些小东西"
+        android:onClick="btn_smallthings"
+        />
+
+</LinearLayout>

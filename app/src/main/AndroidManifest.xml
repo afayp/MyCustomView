@@ -18,9 +18,13 @@
         </activity>
         <activity android:name=".activity.BaseActivity"/>
         <activity android:name=".activity.CommonActivity"/>
-        <activity android:name=".activity.SlideCutListView_activity"/>
-        <activity android:name=".activity.DragLayout_activity"/>
+        <activity android:name=".activity.SlideCutListViewActivity"/>
+        <activity android:name=".activity.DragLayoutActivity"/>
         <activity android:name=".activity.PieView_activity"/>
+        <activity android:name=".activity.StickScrollViewActivity"/>
+        <activity android:name=".activity.BezierActivity"/>
+        <activity android:name=".activity.PathMeasureActivit"/>
+        <activity android:name=".activity.FilpCardActivity"/>
     </application>
 
 </manifest>

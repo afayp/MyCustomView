@@ -9,7 +9,7 @@ import com.pfh.mycustomview.R;
 /**
  *
  */
-public class DragLayout_activity extends BaseActivity {
+public class DragLayoutActivity extends BaseActivity {
 
 
     @Override

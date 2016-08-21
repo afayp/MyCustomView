@@ -5,16 +5,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.Button;
 
 import com.jaeger.library.StatusBarUtil;
 import com.pfh.mycustomview.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn_slideCutListView;
-    private Button btn_draglayout;
-    private Button btn_pieView;
     private Toolbar mToolbar;
     private Intent mIntent;
 
@@ -34,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btn_slideCutListView(View view) {
-        mIntent = new Intent(MainActivity.this, SlideCutListView_activity.class);
+        mIntent = new Intent(MainActivity.this, SlideCutListViewActivity.class);
         startActivity(mIntent);
     }
 
@@ -70,6 +66,32 @@ public class MainActivity extends AppCompatActivity {
     public void btn_smallthings(View view) {
         mIntent = new Intent(MainActivity.this, CommonActivity.class);
         mIntent.putExtra("flag", 4);
+        startActivity(mIntent);
+    }
+
+    public void btn_stickScrollView(View view) {
+        mIntent = new Intent(MainActivity.this, StickScrollViewActivity.class);
+        startActivity(mIntent);
+    }
+
+    public void btn_bezier(View view) {
+        mIntent = new Intent(MainActivity.this, BezierActivity.class);
+        startActivity(mIntent);
+    }
+
+    public void btn_pathMeasure(View view) {
+        mIntent = new Intent(MainActivity.this, PathMeasureActivit.class);
+        startActivity(mIntent);
+    }
+
+    public void btn_3D_view(View view) {
+        mIntent = new Intent(MainActivity.this, CommonActivity.class);
+        mIntent.putExtra("flag", 5);
+        startActivity(mIntent);
+    }
+
+    public void btn_flip_card(View view) {
+        mIntent = new Intent(MainActivity.this, FilpCardActivity.class);
         startActivity(mIntent);
     }
 }

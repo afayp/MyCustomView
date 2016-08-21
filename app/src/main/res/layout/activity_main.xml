@@ -1,75 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-
-    <include layout="@layout/toolbar" />
-
-
-    <Button
-        android:id="@+id/btn_slideCutListView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:text="scroller实现左右滑动删除item的Listview"
-        android:onClick="btn_slideCutListView"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_draglayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:text="DragLayout实现的可拖动viewGroup"
-        android:onClick="btn_draglayout"
-        />
+        <include layout="@layout/toolbar" />
 
-    <Button
-        android:id="@+id/btn_pieView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:text="图表"
-        android:onClick="btn_pieView"
-        />
 
-    <Button
-        android:id="@+id/btn_sketchpad"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:text="surfaceview实现的画图板"
-        android:onClick="btn_sketchpad"
-        />
+        <Button
+            android:id="@+id/btn_slideCutListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:onClick="btn_slideCutListView"
+            android:text="scroller实现左右滑动删除item的Listview" />
 
-    <Button
-        android:id="@+id/btn_analogClock"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:text="时钟(一些细节)"
-        android:onClick="btn_analogClock"
-        />
+        <Button
+            android:id="@+id/btn_draglayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:onClick="btn_draglayout"
+            android:text="DragLayout实现的可拖动viewGroup" />
 
-    <Button
-        android:id="@+id/btn_scratchCardView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:text="PorterDuffXfermode实现的刮刮卡"
-        android:onClick="btn_scratchCardView"
-        />
+        <Button
+            android:id="@+id/btn_pieView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:onClick="btn_pieView"
+            android:text="图表" />
 
-    <Button
-        android:id="@+id/btn_smallthings"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:text="一些小东西"
-        android:onClick="btn_smallthings"
-        />
+        <Button
+            android:id="@+id/btn_sketchpad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:onClick="btn_sketchpad"
+            android:text="surfaceview实现的画图板" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btn_analogClock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:onClick="btn_analogClock"
+            android:text="时钟(一些细节)" />
+
+        <Button
+            android:id="@+id/btn_scratchCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:onClick="btn_scratchCardView"
+            android:text="PorterDuffXfermode实现的刮刮卡" />
+
+        <Button
+            android:id="@+id/btn_smallthings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:onClick="btn_smallthings"
+            android:text="一些小东西" />
+
+        <Button
+            android:id="@+id/btn_stickScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:onClick="btn_stickScrollView"
+            android:text="粘性ScrollView" />
+
+        <Button
+            android:id="@+id/btn_bezier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:onClick="btn_bezier"
+            android:text="贝塞尔曲线" />
+
+        <Button
+            android:id="@+id/btn_pathMeasure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:onClick="btn_pathMeasure"
+            android:text="pathMeasure使用" />
+
+        <Button
+            android:id="@+id/btn_3D_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:onClick="btn_3D_view"
+            android:text="3D立体旋转view" />
+
+        <Button
+            android:id="@+id/btn_flip_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:onClick="btn_flip_card"
+            android:text="旋转卡片" />
+    </LinearLayout>
+
+
+</ScrollView>
+
+

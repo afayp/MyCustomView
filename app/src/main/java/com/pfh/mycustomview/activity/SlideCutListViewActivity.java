@@ -10,7 +10,7 @@ import com.pfh.mycustomview.view.SlideCutListView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SlideCutListView_activity extends BaseActivity {
+public class SlideCutListViewActivity extends BaseActivity {
 
     private List<String> dataList;
     private SlideCutListView listview;
@@ -30,7 +30,7 @@ public class SlideCutListView_activity extends BaseActivity {
             @Override
             public void removeItem(int direction, int position) {
                 adapter.remove(adapter.getItem(position));
-                Toast.makeText(SlideCutListView_activity.this,"删除了"+position+"item",Toast.LENGTH_SHORT).show();
+                Toast.makeText(SlideCutListViewActivity.this,"删除了"+position+"item",Toast.LENGTH_SHORT).show();
 
             }
         });

@@ -50,7 +50,7 @@ public class ScratchCardView extends View {
         mPaint.setStrokeCap(Paint.Cap.ROUND);
 
         mPath = new Path();
-        mBgBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.nice);//底图
+        mBgBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.nice1);//底图
         mBgBitmapWidth = mBgBitmap.getWidth();
         mBgBitmapHeight = mBgBitmap.getHeight();
 

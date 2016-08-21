@@ -43,6 +43,12 @@ public class CommonActivity extends BaseActivity {
                 setContentView(R.layout.common_activity_smallthings);
                 setToolbarTitle("小东西");
                 break;
+            case 5:
+                setContentView(R.layout.common_activity_3d_view);
+                setToolbarTitle("3D立体旋转效果");
+                break;
+
+
         }
     }
 }

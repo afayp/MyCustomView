@@ -106,6 +106,14 @@
             android:layout_marginBottom="2dp"
             android:onClick="btn_flip_card"
             android:text="旋转卡片" />
+        <Button
+            android:id="@+id/btn_slack_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:onClick="btn_slack_loading"
+            android:text="加载动画" />
+
     </LinearLayout>
 
 

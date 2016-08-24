@@ -94,4 +94,9 @@ public class MainActivity extends AppCompatActivity {
         mIntent = new Intent(MainActivity.this, FilpCardActivity.class);
         startActivity(mIntent);
     }
+
+    public void btn_slack_loading(View view) {
+        mIntent = new Intent(MainActivity.this, SlackLoadingActivity.class);
+        startActivity(mIntent);
+    }
 }

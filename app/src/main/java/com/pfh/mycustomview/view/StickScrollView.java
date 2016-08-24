@@ -86,7 +86,7 @@ public class StickScrollView extends ViewGroup {
                 }
                 int dy = mLastY -y;
                 if (getScrollY() < 0){//超过上边缘
-                    dy /= 3;//手指一动3cm，view仅一移动1cm，就会有种滑不动的感觉
+                    dy /= 3;//手指移动3cm，view仅一移动1cm，就会有种滑不动的感觉
                 }
                 if (getScrollY() > (realChildCount-1)*mScreenHeight){//下边缘
                     dy /= 3;

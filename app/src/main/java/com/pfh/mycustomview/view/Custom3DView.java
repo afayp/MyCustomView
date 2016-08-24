@@ -87,6 +87,7 @@ public class Custom3DView extends ViewGroup {
 
         measureChildren(childWidthMeasureSpec,childHeightMeasureSpec);//测量子view,会去遍历所有子view
 
+
         mHeight = getMeasuredHeight();//一屏的高度（就是viewGroup的高度）
 
         scrollTo(0,mStartScreen * mHeight);//因为子控件从上到下排列，所以滚到第一个的位置

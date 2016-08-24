@@ -56,7 +56,7 @@ public class SearchView extends View {
     // 动画数值(用于控制动画状态,因为同一时间内只允许有一种状态出现,具体数值处理取决于当前状态)
     private float mAnimatorValue = 0;
 
-    // 动效过程监听器
+    // 动画过程监听器
     private ValueAnimator.AnimatorUpdateListener mUpdateListener;
     private Animator.AnimatorListener mAnimatorListener;
 
@@ -112,6 +112,7 @@ public class SearchView extends View {
         mMeasure = new PathMeasure();
 
         // 注意,不要到360度,否则内部会自动优化,测量不能取到需要的数值
+        //下面的坐标是按把画布平移到中心点之后的计算的
         RectF oval1 = new RectF(-50, -50, 50, 50);          // 放大镜圆环
         path_srarch.addArc(oval1, 45, 359.9f);
 
@@ -161,6 +162,11 @@ public class SearchView extends View {
         };
     }
 
+    /**
+     * 为什么要用handler？
+     * 因为这里对三个动画共用了一个AnimatorListener，在动画结束时统一发一个空消息到handler，handler根据mCurrentState做出反应
+     * 其实不用handler也可以，那就对三个动画分别add listener，在end时做出反应（改变mCurrentState，开启下一个动画等）
+     */
     private void initHandler() {
         mAnimatorHandler = new Handler() {
             @Override

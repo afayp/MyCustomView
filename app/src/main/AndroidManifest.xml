@@ -25,6 +25,7 @@
         <activity android:name=".activity.BezierActivity"/>
         <activity android:name=".activity.PathMeasureActivit"/>
         <activity android:name=".activity.FilpCardActivity"/>
+        <activity android:name=".activity.SlackLoadingActivity"/>
     </application>
 
 </manifest>
